@@ -8,8 +8,8 @@ print(board)
 
 #Player 1 input - Arsh
 
-board1 = input("Where would you like to go?")
-if board1 == 1:
+X = int(input("Where would you like to go?"))
+if X == 1:
     board = "X 2 3\n4 5 6\n7 8 9"
 elif board == 2:
     board = "1 X 3\n4 5 6\n7 8 9"
@@ -18,7 +18,7 @@ else:
 #elif X == 3:
  #   board = "1 2 X\n4 5 6\n7 8 9"
 #elif X == 4:
-#    board = "1 2 3\nX 5 6\n7 8 9"
+ #   board = "1 2 3\nX 5 6\n7 8 9"
 #elif X == 5:
 #    board = "1 2 3\n4 X 6\n7 8 9"
 #elif X == 6:
