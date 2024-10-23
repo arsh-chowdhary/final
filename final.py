@@ -3,28 +3,33 @@
 
 
 #Board - Group
-board = print("1 2 3\n4 5 6\n7 8 9")
+board = "1 2 3\n4 5 6\n7 8 9"
+print(board)
 
 #Player 1 input - Arsh
-X = input("Where would you like to go?")
-if X == 1:
-    board = print("X 2 3\n4 5 6\n7 8 9")
-elif X == 2:
-    board = print("1 X 3\n4 5 6\n7 8 9")
-elif X == 3:
-    board = print("1 2 X\n4 5 6\n7 8 9")
-elif X == 4:
-    board = print("1 2 3\nX 5 6\n7 8 9")
-elif X == 5:
-    board = print("1 2 3\n4 X 6\n7 8 9")
-elif X == 6:
-    board = print("1 2 3\n4 5 X\n7 8 9")
-elif X == 7:
-    board = print("1 2 3\n4 5 6\nX 8 9")
-elif X == 8:
-     board = print("1 2 3\n4 5 6\n7 X 9")
-elif X == 9:
-    board = print("1 2 3\n4 5 6\n7 8 X")
+
+board1 = input("Where would you like to go?")
+if board1 == 1:
+    board = "X 2 3\n4 5 6\n7 8 9"
+elif board == 2:
+    board = "1 X 3\n4 5 6\n7 8 9"
+else:
+    print("You cannot input that")
+#elif X == 3:
+ #   board = "1 2 X\n4 5 6\n7 8 9"
+#elif X == 4:
+#    board = "1 2 3\nX 5 6\n7 8 9"
+#elif X == 5:
+#    board = "1 2 3\n4 X 6\n7 8 9"
+#elif X == 6:
+#    board = "1 2 3\n4 5 X\n7 8 9"
+#elif X == 7:
+#    board = "1 2 3\n4 5 6\nX 8 9"
+#elif X == 8:
+#     board = "1 2 3\n4 5 6\n7 X 9"
+#elif X == 9:
+#    board = "1 2 3\n4 5 6\n7 8 X"
+print(board)
 
 
 
