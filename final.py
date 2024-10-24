@@ -7,9 +7,10 @@ board3 = ["7", "8", "9"]
 print("", board1,"\n", board2,"\n", board3)
 
 #Player 1 input - Arsh
-#def player(playing):
-#     return(int(input(f"How much is your {}?: ")))
-X = int(input("Player 1's turn\nChoose a slot 1-9:\n"))
+def playing(player):
+     return(int(input(f"{player} turn\nChoose a slot 1-9 that has not been taken: ")))
+
+X = playing("Player 1's")
 if X == 1:
      board1[0]="X"
 elif X == 2:
@@ -34,8 +35,14 @@ print("", board1,"\n", board2,"\n", board3)
 
 
 #Player 2 input - Nathaly
-O = int(input("Player 2's turn\nChoose a slot 1-9:\n"))
-if O == 1:
+def slot(number):
+     return(int(input(f"{number} has already been taken!")))
+
+O = playing("Player 2's")
+if O==X:
+     print(slot(X))
+     O = input("Player 2's turn\nChoose a slot 1-9 that has not been taken: ")
+elif O == 1:
      board1[0]="O"
 elif O == 2:
      board1[1]="O"
@@ -56,11 +63,6 @@ elif O == 9:
 else:
     print("You cannot input that")
 print("", board1,"\n", board2,"\n", board3)
-
-#O = input("Where wou
-
-if O is X:
-    print("Already taken.")
 
 #Keep going - Isaac
 
