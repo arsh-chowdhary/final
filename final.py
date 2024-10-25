@@ -228,5 +228,84 @@ elif board1[1] == board2[1] == board3[1] == "X":
      print("X Wins!")
 elif board1[2] == board2[2] == board3[2] == "X":
      print("X Wins!")
+
+O = playing("O's")
+if O == 1:
+     board1[0]="O"
+elif O == 2:
+     board1[1]="O"
+elif O == 3:
+     board1[2]="O"
+elif O == 4:
+     board2[0]="O"
+elif O == 5:
+     board2[1]="O"
+elif O == 6:
+     board2[2]="O"
+elif O == 7:
+     board3[0]="O" 
+elif O == 8:
+     board3[1]="O"
+elif O == 9:
+     board3[2]="O"
+else:
+    print("You cannot input that")
+print("", board1,"\n", board2,"\n", board3)
+
+if board1 == ["O", "O", "O"]:
+     print("O Wins!")
+elif board2 == ["O", "O", "O"]:
+     print("O Wins!")
+elif board3 == ["O", "O", "O"]:
+     print("O Wins!")
+elif board1[0] == board2[1] == board3[2] == "O":
+     print("O Wins!")
+elif board1[2] == board2[1] == board3[0] == "O":
+     print("O Wins!")
+elif board1[0] == board2[0] == board3[0] == "O":
+     print("O Wins!")
+elif board1[1] == board2[1] == board3[1] == "O":
+     print("O Wins!")
+elif board1[2] == board2[2] == board3[2] == "O":
+     print("O Wins!")
+X = playing("X's")
+if X == 1:
+     board1[0]="X"
+elif X == 2:
+     board1[1]="X"
+elif X == 3:
+     board1[2]="X"
+elif X == 4:
+     board2[0]="X"
+elif X == 5:
+     board2[1]="X"
+elif X == 6:
+     board2[2]="X"
+elif X == 7:
+     board3[0]="X" 
+elif X == 8:
+     board3[1]="X"
+elif X == 9:
+     board3[2]="X"
+else:
+    print("You cannot input that")
+print("", board1,"\n", board2,"\n", board3)
+
+if board1 == ["X", "X", "X"]:
+     print("X Wins!")
+elif board2 == ["X", "X", "X"]:
+     print("X Wins!")
+elif board3 == ["X", "X", "X"]:
+     print("X Wins!")
+elif board1[0] == board2[1] == board3[2] == "X":
+     print("X Wins!")
+elif board1[2] == board2[1] == board3[0] == "X":
+     print("X Wins!")
+elif board1[0] == board2[0] == board3[0] == "X":
+     print("X Wins!")
+elif board1[1] == board2[1] == board3[1] == "X":
+     print("X Wins!")
+elif board1[2] == board2[2] == board3[2] == "X":
+     print("X Wins!")
 else:
      print("Tied!")
