@@ -1,4 +1,5 @@
 # Tic Tac Toe - Arsh, Nathaly, Isaac, Juan
+#Loop is the whole code
 #Board - Group
 board1 = ["1", "2", "3"]
 board2 = ["4", "5", "6"]
@@ -6,9 +7,11 @@ board3 = ["7", "8", "9"]
 print("", board1,"\n", board2,"\n", board3)
 
 #Player 1 input - Arsh
+#Function 1
 def playing(player):
      return(int(input(f"{player} turn\nChoose a slot 1-9 that has not been taken: ")))
 
+#Conditionals
 X = playing("X's")
 if X == 1:
      board1[0]="X"
@@ -33,6 +36,7 @@ else:
 print("", board1,"\n", board2,"\n", board3)
 
 #Player 2 input - Nathaly
+#Function 2
 def slot(number):
      return(int(input(f"{number} has already been taken!")))
 
@@ -63,7 +67,9 @@ print("", board1,"\n", board2,"\n", board3)
 
 #Keep going - Isaac
 X = playing("X's")
-if X == 1:
+if X==O:
+     print(slot(X))
+elif X == 1:
      board1[0]="X"
 elif X == 2:
      board1[1]="X"
@@ -86,7 +92,9 @@ else:
 print("", board1,"\n", board2,"\n", board3)
 
 O = playing("O's")
-if O == 1:
+if O==X:
+     print(slot(X))
+elif O == 1:
      board1[0]="O"
 elif O == 2:
      board1[1]="O"
@@ -109,7 +117,9 @@ else:
 print("", board1,"\n", board2,"\n", board3)
 
 X = playing("X's")
-if X == 1:
+if X==O:
+     print(slot(X))
+elif X == 1:
      board1[0]="X"
 elif X == 2:
      board1[1]="X"
@@ -150,7 +160,9 @@ elif board1[2] == board2[2] == board3[2] == "X":
      print("X Wins!")
 
 O = playing("O's")
-if O == 1:
+if O==X:
+     print(slot(X))
+elif O == 1:
      board1[0]="O"
 elif O == 2:
      board1[1]="O"
@@ -190,7 +202,9 @@ elif board1[2] == board2[2] == board3[2] == "O":
      print("O Wins!")
 
 X = playing("X's")
-if X == 1:
+if X==O:
+     print(slot(X))
+elif X == 1:
      board1[0]="X"
 elif X == 2:
      board1[1]="X"
@@ -230,7 +244,9 @@ elif board1[2] == board2[2] == board3[2] == "X":
      print("X Wins!")
 
 O = playing("O's")
-if O == 1:
+if O==X:
+     print(slot(X))
+elif O == 1:
      board1[0]="O"
 elif O == 2:
      board1[1]="O"
@@ -268,8 +284,11 @@ elif board1[1] == board2[1] == board3[1] == "O":
      print("O Wins!")
 elif board1[2] == board2[2] == board3[2] == "O":
      print("O Wins!")
+
 X = playing("X's")
-if X == 1:
+if X==O:
+     print(slot(X))
+elif X == 1:
      board1[0]="X"
 elif X == 2:
      board1[1]="X"
