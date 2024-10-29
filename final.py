@@ -16,24 +16,24 @@ def slot(number):
 
 #Loop
 while True:
-     X = playing("X's")
-     if X == 1:     #Conditionals
+     XOne = playing("X's")
+     if XOne == 1:     #Conditionals
           board1[0]="X"
-     elif X == 2:
+     elif XOne == 2:
           board1[1]="X"
-     elif X == 3:
+     elif XOne == 3:
           board1[2]="X"
-     elif X == 4:
+     elif XOne == 4:
           board2[0]="X"
-     elif X == 5:
+     elif XOne == 5:
           board2[1]="X"
-     elif X == 6:
+     elif XOne == 6:
           board2[2]="X"
-     elif X == 7:
+     elif XOne == 7:
           board3[0]="X" 
-     elif X == 8:
+     elif XOne == 8:
           board3[1]="X"
-     elif X == 9:
+     elif XOne == 9:
           board3[2]="X"
      else:
           print("You cannot input that")
@@ -41,102 +41,102 @@ while True:
 
 #Player 2 input - Nathaly
 #Function 2
-     O = playing("O's")
-     if O==X:
-          print(slot(X))
-     elif O == 1:
+     OOne = playing("O's")
+     if OOne==XOne:
+          print("You can't input that")
+     elif OOne == 1:
           board1[0]="O"
-     elif O == 2:
+     elif OOne == 2:
           board1[1]="O"
-     elif O == 3:
+     elif OOne == 3:
           board1[2]="O"
-     elif O == 4:
+     elif OOne == 4:
           board2[0]="O"
-     elif O == 5:
+     elif OOne == 5:
           board2[1]="O"
-     elif O == 6:
+     elif OOne == 6:
           board2[2]="O"
-     elif O == 7:
+     elif OOne == 7:
           board3[0]="O" 
-     elif O == 8:
+     elif OOne == 8:
           board3[1]="O"
-     elif O == 9:
+     elif OOne == 9:
           board3[2]="O"
      else:
           print("You cannot input that")
      print("", board1,"\n", board2,"\n", board3)
 
 #Keep going - Isaac
-     X = playing("X's")
-     if X==O:
-          print(slot(X))
-     elif X == 1:
+     XTwo = playing("X's")
+     if XTwo==OOne or XTwo==XOne:
+          print("You can't input that")
+     elif XTwo == 1:
           board1[0]="X"
-     elif X == 2:
+     elif XTwo == 2:
           board1[1]="X"
-     elif X == 3:
+     elif XTwo == 3:
           board1[2]="X"
-     elif X == 4:
+     elif XTwo == 4:
           board2[0]="X"
-     elif X == 5:
+     elif XTwo == 5:
           board2[1]="X"
-     elif X == 6:
+     elif XTwo == 6:
           board2[2]="X"
-     elif X == 7:
+     elif XTwo == 7:
           board3[0]="X" 
-     elif X == 8:
+     elif XTwo == 8:
           board3[1]="X"
-     elif X == 9:
+     elif XTwo == 9:
           board3[2]="X"
      else:
           print("You cannot input that")
      print("", board1,"\n", board2,"\n", board3)
 
-     O = playing("O's")
-     if O==X:
-          print(slot(X))
-     elif O == 1:
+     OTwo = playing("O's")
+     if OTwo==XOne or OTwo==OOne:
+          print("You cannot input that")
+     elif OTwo == 1:
           board1[0]="O"
-     elif O == 2:
+     elif OTwo == 2:
           board1[1]="O"
-     elif O == 3:
+     elif OTwo == 3:
           board1[2]="O"
-     elif O == 4:
+     elif OTwo == 4:
           board2[0]="O"
-     elif O == 5:
+     elif OTwo == 5:
           board2[1]="O"
-     elif O == 6:
+     elif OTwo == 6:
           board2[2]="O"
-     elif O == 7:
+     elif OTwo == 7:
           board3[0]="O" 
-     elif O == 8:
+     elif OTwo == 8:
           board3[1]="O"
-     elif O == 9:
+     elif OTwo == 9:
           board3[2]="O"
      else:
           print("You cannot input that")
      print("", board1,"\n", board2,"\n", board3)
 
-     X = playing("X's")
-     if X==O:
-          print(slot(X))
-     elif X == 1:
+     XThree = playing("X's")
+     if XThree==OOne or XThree==OTwo or XThree==XOne or XThree==XTwo:
+          print(("You can't input that"))
+     elif XThree == 1:
           board1[0]="X"
-     elif X == 2:
+     elif XThree == 2:
           board1[1]="X"
-     elif X == 3:
+     elif XThree == 3:
           board1[2]="X"
-     elif X == 4:
+     elif XThree == 4:
           board2[0]="X"
-     elif X == 5:
+     elif XThree == 5:
           board2[1]="X"
-     elif X == 6:
+     elif XThree == 6:
           board2[2]="X"
-     elif X == 7:
+     elif XThree == 7:
           board3[0]="X" 
-     elif X == 8:
+     elif XThree == 8:
           board3[1]="X"
-     elif X == 9:
+     elif XThree == 9:
           board3[2]="X"
      else:
           print("You cannot input that")
@@ -168,26 +168,26 @@ while True:
           print("X Wins!")
           break
 
-     O = playing("O's")
-     if O==X:
-          print(slot(X))
-     elif O == 1:
+     OThree = playing("O's")
+     if OThree==XOne or OThree==XTwo or OThree==XThree or OThree==OOne or OThree==OTwo:
+          print("You can't input that")
+     elif OThree == 1:
           board1[0]="O"
-     elif O == 2:
+     elif OThree == 2:
           board1[1]="O"
-     elif O == 3:
+     elif OThree == 3:
           board1[2]="O"
-     elif O == 4:
+     elif OThree == 4:
           board2[0]="O"
-     elif O == 5:
+     elif OThree == 5:
           board2[1]="O"
-     elif O == 6:
+     elif OThree == 6:
           board2[2]="O"
-     elif O == 7:
+     elif OThree == 7:
           board3[0]="O" 
-     elif O == 8:
+     elif OThree == 8:
           board3[1]="O"
-     elif O == 9:
+     elif OThree == 9:
           board3[2]="O"
      else:
           print("You cannot input that")
@@ -218,26 +218,26 @@ while True:
           print("O Wins!")
           break
 
-     X = playing("X's")
-     if X==O:
-          print(slot(X))
-     elif X == 1:
+     XFour = playing("X's")
+     if XFour==OOne or XFour==OTwo or XFour==OThree or XFour==XOne or XFour==XTwo or XFour==XThree:
+          print("You can't input that")
+     elif XFour == 1:
           board1[0]="X"
-     elif X == 2:
+     elif XFour == 2:
           board1[1]="X"
-     elif X == 3:
+     elif XFour == 3:
           board1[2]="X"
-     elif X == 4:
+     elif XFour == 4:
           board2[0]="X"
-     elif X == 5:
+     elif XFour == 5:
           board2[1]="X"
-     elif X == 6:
+     elif XFour == 6:
           board2[2]="X"
-     elif X == 7:
+     elif XFour == 7:
           board3[0]="X" 
-     elif X == 8:
+     elif XFour == 8:
           board3[1]="X"
-     elif X == 9:
+     elif XFour == 9:
           board3[2]="X"
      else:
           print("You cannot input that")
@@ -268,26 +268,26 @@ while True:
           print("X Wins!")
           break
 
-     O = playing("O's")
-     if O==X:
-          print(slot(X))
-     elif O == 1:
+     OFour = playing("O's")
+     if OFour==XOne or OFour==XTwo or OFour==XThree or OFour==XFour or OFour==OOne or OFour==OTwo or OFour==OThree:
+          print("You cannot input that")
+     elif OFour == 1:
           board1[0]="O"
-     elif O == 2:
+     elif OFour == 2:
           board1[1]="O"
-     elif O == 3:
+     elif OFour == 3:
           board1[2]="O"
-     elif O == 4:
+     elif OFour == 4:
           board2[0]="O"
-     elif O == 5:
+     elif OFour == 5:
           board2[1]="O"
-     elif O == 6:
+     elif OFour == 6:
           board2[2]="O"
-     elif O == 7:
+     elif OFour == 7:
           board3[0]="O" 
-     elif O == 8:
+     elif OFour == 8:
           board3[1]="O"
-     elif O == 9:
+     elif OFour == 9:
           board3[2]="O"
      else:
           print("You cannot input that")
@@ -318,26 +318,26 @@ while True:
           print("O Wins!")
           break
 
-     X = playing("X's")
-     if X==O:
+     XFive = playing("X's")
+     if XFive==OOne or XFive==OTwo or XFive==OThree or XFive==OFour or XFive==OFour or XFive==XOne or XFive==XTwo or XFive==XThree or XFive==XFour:
           print(slot(X))
-     elif X == 1:
+     elif XFive == 1:
           board1[0]="X"
-     elif X == 2:
+     elif XFive == 2:
           board1[1]="X"
-     elif X == 3:
+     elif XFive == 3:
           board1[2]="X"
-     elif X == 4:
+     elif XFive == 4:
           board2[0]="X"
-     elif X == 5:
+     elif XFive == 5:
           board2[1]="X"
-     elif X == 6:
+     elif XFive == 6:
           board2[2]="X"
-     elif X == 7:
+     elif XFive == 7:
           board3[0]="X" 
-     elif X == 8:
+     elif XFive == 8:
           board3[1]="X"
-     elif X == 9:
+     elif XFive == 9:
           board3[2]="X"
      else:
           print("You cannot input that")
@@ -370,3 +370,5 @@ while True:
      else:
           print("Tied!")
           break
+
+#Add one O Turn
