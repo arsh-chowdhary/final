@@ -201,6 +201,7 @@ while True:
     print("", board1, "\n", board2, "\n", board3)
     
     #Check who wins - Juan
+    #Not in a loop so it can end the whole game once someone wins
     if board1 == ["X", "X", "X"] or board2 == ["X", "X", "X"] or board3 == ["X", "X", "X"]:
         print("X Wins!")
         break
@@ -444,5 +445,5 @@ while True:
         print("X Wins!")
         break
     else:
-        print("Tied!")
+        print("Tied!") #Ties if no other conditions are met as this is the last round
         break
