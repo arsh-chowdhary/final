@@ -11,7 +11,7 @@ def playing(player):
      return(int(input(f"{player} turn. Choose a slot 1-9: ")))
 
 def slot(number):
-     print(f"{number} has already been taken!")
+     print(f"{number} has already been taken! Try again.")
 
 #Player 1 input - Arsh
 #Loop
