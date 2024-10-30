@@ -6,20 +6,20 @@ board2 = ["4", "5", "6"]
 board3 = ["7", "8", "9"]
 print("", board1,"\n", board2,"\n", board3)
 
-#Functions
+#Function to ask the player what slot they want to choose
 def playing(player):
      return(int(input(f"{player} turn. Choose a slot 1-9: ")))
-
+#Function to inform the player the slot has already been taken
 def slot(number):
      print(f"{number} has already been taken! Try again.")
 
 #Player 1 input - Arsh
-#Loop
+#Whole code is a loop
 while True:
-    # Conditionals
+    #Smaller loop for each input
     while True:
         X = playing("X's")
-        if X == 1 and board1[0] == "1":
+        if X == 1 and board1[0] == "1": #Conditionals to check where to put the input on the board
             board1[0] = "X"
             break
         elif X == 2 and board1[1] == "2":
